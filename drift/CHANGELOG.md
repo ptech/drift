@@ -1,3 +1,7 @@
+## 2.30.1 (ptech fork)
+
+- Fix stream queries being updated when a nested transaction completes instead of after the outermost transaction, which could make them miss writes with `MultiExecutor` (#3867). Cherry-picked from upstream `2a825bafe`.
+
 ## 2.30.1
 
 - Web: Fix databases being moved from IndexedDB to OPFS even if
